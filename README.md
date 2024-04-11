@@ -1,5 +1,12 @@
 # Instructions
 
+### Download the image from dockerhub
+```
+PORT=9000
+docker run --detach --privileged -p $PORT:8080 wilrojasf/wordpress
+```
+
+### OR Build the image from this Repository
 1. Build the image
     ```
     docker build -t wordpress:dind -f ./Dockerfile .
